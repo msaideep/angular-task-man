@@ -1,0 +1,26 @@
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="medium" color="#fff" type="ball-fussion"></ngx-spinner>
+
+<div class="container-fluid mt-3">
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered table-sm">
+      <thead class="thead-dark">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description Name</th>
+          <th>Type</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td> {{ task._id }} </td>
+          <td> {{ task.name }} </td>
+          <td> {{ task.description }} </td>
+          <td> {{ task.type }} </td>
+          <td> {{ task.priority }} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
